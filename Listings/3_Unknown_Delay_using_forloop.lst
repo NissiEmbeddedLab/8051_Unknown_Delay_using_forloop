@@ -1,0 +1,36 @@
+C51 COMPILER V9.60.0.0   3_UNKNOWN_DELAY_USING_FORLOOP                                     05/02/2020 23:03:56 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE 3_UNKNOWN_DELAY_USING_FORLOOP
+OBJECT MODULE PLACED IN .\Objects\3_Unknown_Delay_using_forloop.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE 3_Unknown_Delay_using_forloop.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXT
+                    -END PRINT(.\Listings\3_Unknown_Delay_using_forloop.lst) TABS(2) OBJECT(.\Objects\3_Unknown_Delay_using_forloop.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          unsigned int x;
+   3          void main(void)
+   4          {
+   5   1       for(;;)
+   6   1       { 
+   7   2       P1 = 0x55;
+   8   2       for(x=0;x<40000;x++);
+   9   2       P1 = 0xAA;
+  10   2       for(x=0;x<40000;x++);
+  11   2       }
+  12   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     74    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

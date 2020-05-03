@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\3_Unknown_Delay_using_forloop.obj" 
+TO ".\Objects\3_Unknown_Delay_using_forloop" 
+PRINT(".\Listings\3_Unknown_Delay_using_forloop.m51") RAMSIZE(256) 
